@@ -13,8 +13,8 @@ app = Flask(__name__)
 
 load_dotenv()
 
-PINECONE_API_KEY = os.environ.get('f0d9f7f3-b513-4bfa-bbaa-e803494d8e01')
-PINECONE_API_ENV = os.environ.get('gcp-starter')
+PINECONE_API_KEY = os.environ.get("f0d9f7f3-b513-4bfa-bbaa-e803494d8e01")
+PINECONE_API_ENV = os.environ.get("gcp-starter")
 
 
 embeddings = download_hugging_face_embeddings()
