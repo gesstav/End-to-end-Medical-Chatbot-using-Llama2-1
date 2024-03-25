@@ -20,10 +20,12 @@ PINECONE_API_ENV = os.environ.get('PINECONE_API_ENV')
 embeddings = download_hugging_face_embeddings()
 
 #Initializing the Pinecone
-pinecone.init(api_key=PINECONE_API_KEY,
-              environment=PINECONE_API_ENV)
+pinecone.Pinecone(
+   api_key=os.getenv("f0d9f7f3-b513-4bfa-bbaa-e803494d8e01"),  
+   environment=os.getenv("gcp-starter"),  
+)
 
-index_name="medical-bot"
+index_name="medical-chatbot"
 
 #Loading the index
 docsearch=Pinecone.from_existing_index(index_name, embeddings)

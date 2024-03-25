@@ -6,8 +6,8 @@ import os
 
 load_dotenv()
 
-PINECONE_API_KEY = os.environ.get('f0d9f7f3-b513-4bfa-bbaa-e803494d8e01')
-PINECONE_API_ENV = os.environ.get('gcp-starter')
+PINECONE_API_KEY = os.environ.get("f0d9f7f3-b513-4bfa-bbaa-e803494d8e01")
+PINECONE_API_ENV = os.environ.get("gcp-starter")
 
 # print(PINECONE_API_KEY)
 # print(PINECONE_API_ENV)
@@ -22,7 +22,7 @@ import os
 from pinecone import Pinecone, ServerlessSpec
 
 pc = Pinecone(
-        api_key=os.environ.get("PINECONE_API_KEY")
+        api_key=os.environ.get("f0d9f7f3-b513-4bfa-bbaa-e803494d8e01")
     )
 
     # Now do stuff
